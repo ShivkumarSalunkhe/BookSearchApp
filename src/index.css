@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-y: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.top-header {
+  background-image: url("./Assets/headerback.jpg");
+  display: flex;
+  color: white;
+  justify-content: center;
+  font-size: 60px;
+  letter-spacing: 5px;
+}
+
+.content {
+  background-image: url("./Assets/background.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: contain;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* background-color: aqua; */
+}
+
+form {
+  /* background-color: rgb(14, 86, 86); */
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+input {
+  width: 80vw;
+  height: 5vh;
+  border: 0;
+  font-size: 20px;
+  padding: 2px;
+}
+
+.books-container {
+  margin-top: 20px;
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.books-container div {
+  width: 11vw;
+}
+
+.books-container div:hover {
+  transition: 500ms;
+  scale: 1.05;
+}
+
+.books-container div:not(:hover) .additional {
+  visibility: hidden;
+  background-color: transparent;
+}
+
+.books-container div:hover .additional {
+  visibility: visible;
+}
+
+
+
+
+.books-container div:hover .dark {
+  background-color: rgba(0, 0, 0, 0.696);
+}
+
+.books-container div img {
+  width: 100%
+}
+
+
+.book-tile img {
+  aspect-ratio: 1/1.5;
+}
